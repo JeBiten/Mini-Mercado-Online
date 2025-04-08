@@ -1,57 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos do Minimercado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Mercado Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Minimercado Online</h1>
-        <p>Confira nossos produtos disponíveis divididos por categorias!</p>
-    </header>
+  <header class="text-center p-4 bg-primary text-white">
+    <h1>Mini Mercado Online</h1>
+  </header>
 
-    <main>
-        <!-- Categoria 1: Frutas e Verduras -->
-        <section>
-            <h2>Frutas e Verduras</h2>
-            <div>
-                <img src="banana.png" alt="Banana" width="200">
-                <p><strong>Banana</strong> - R$ 4,00/kg</p>
-            </div>
-            <div>
-                <img src="lettuce.png" alt="Alface" width="200">
-                <p><strong>Alface</strong> - R$ 2,50/unidade</p>
-            </div>
-        </section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/imagem1.jpg" class="d-block w-100" alt="Produtos frescos em promoção">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem2.jpg" class="d-block w-100" alt="Variedade em bebidas">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem3.jpg" class="d-block w-100" alt="Hortifruti selecionado">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-        <!-- Categoria 2: Produtos Alimentícios Não Perecíveis -->
-        <section>
-            <h2>Produtos Alimentícios Não Perecíveis</h2>
-            <div>
-                <img src="rice.png" alt="Arroz" width="200">
-                <p><strong>Arroz</strong> - R$ 20,00/pacote</p>
-            </div>
-            <div>
-                <img src="beans.png" alt="Feijão" width="200">
-                <p><strong>Feijão</strong> - R$ 10,00/pacote</p>
-            </div>
-        </section>
+  <footer class="text-center p-3 bg-dark text-white mt-4">
+    <p>&copy; 2025 Mini Mercado Online</p>
+  </footer>
 
-        <!-- Categoria 3: Produtos de Higiene e Limpeza -->
-        <section>
-            <h2>Produtos de Higiene e Limpeza</h2>
-            <div>
-                <img src="washing_powder.png" alt="Sabão em Pó" width="200">
-                <p><strong>Sabão em Pó</strong> - R$ 8,00/pacote</p>
-            </div>
-            <div>
-                <img src="toilet_paper.png" alt="Papel Higiênico" width="200">
-                <p><strong>Papel Higiênico</strong> - R$ 12,00/pacote</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Minimercado Online - Todos os direitos reservados.</p>
-        <p>Contato: contato@minimercado.com |
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
